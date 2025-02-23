@@ -1,0 +1,60 @@
+.container
+{
+    padding: 30px;
+}
+.shape{
+    animation: shape 5s infinite linear;
+}
+.service-card{
+    /* background: var(--blue); */
+    color: var(--blue);
+    border: 1px dashed var(--yellow);
+    padding: 10px;
+    border-radius: 7px;
+    height: 200px;
+}
+.service-card i{
+    font-size: 35px;
+    margin: 15px 0;
+}
+.service-card h3{
+    color: var(--yellow);
+    font-size: 18px;
+}
+.service-card p{
+    font-size: 11px;
+    color: #777;
+}
+@media(max-width:578px){
+    .service-card{
+        height: auto;
+    }
+}
+img{
+    width: 350px;
+}
+@media(max-width:991px){
+    .title{
+        font-size: 50px;margin: auto;
+    }
+    img{
+        width: 200px;
+    }
+
+}
+@media(max-width:568px){
+    .title{
+        font-size: 30px;
+    }
+}
+@keyframes shape {
+    0% , 100% {
+        transform: translateX(30px);
+    }
+    25%  {
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-30);
+    }
+}

@@ -1,0 +1,186 @@
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+
+
+.main{
+    padding: 200px 0 250px 0;
+    background: var(--grad);
+}
+.title_l{
+    margin-top: 300px;
+    margin-left: 20px;
+}
+.taps{
+    margin-top: 70px;
+}
+.nav-tabs{
+    border: none;
+    justify-content: center;
+    gap: 20px;
+}
+.nav-tabs .nav-link{
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.nav-tabs .nav-link.active{
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+    background: transparent;
+}
+.nav-tabs .nav-link:hover{
+    color: var(--yellow);
+    background: #fff;
+}
+.card-title{
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+.card-img{
+    height: 150px;
+}
+.card-text{
+    font-size: 13px;
+    height: 60px;
+    margin: 0;
+}
+.java .card-text{
+height: 90px;
+}
+.card-body{
+    text-align: center;
+    padding: 15px;
+}
+.tech {
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: 10px 0;
+}
+.tech span{
+    background: var(--yellow);
+    font-size: 9px;
+    border-radius: 5px;
+    color: #000;
+    padding:2px 3px;
+    font-weight: 600;
+}
+button{
+    background: none;
+    border: none;
+    margin: 20px 0 10px;
+    width: 100%;
+}
+button a{
+    color: var(--blue);
+    outline-color: var(--blue);
+    border: none;
+    text-decoration: none;
+}
+button a:hover{
+    color: #fff;
+    border: none;
+    background: var(--blue);
+}
+.swiper-container {
+    width: 100%;
+    /* height: 400px; */
+    margin: 20px 0;
+  }
+  
+  .product-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    /* border-radius: 10px; */
+    background-color: #fff;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  
+
+  .product-card img {
+    width: 100%;
+    height: 100px;
+  }
+  
+  .swiper-container {
+    width: 100%;
+    margin: 50px 0;
+  }
+
+  .product-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+ .btn_swip{
+    background: var(--yellow);
+    color: #fff;
+    border-radius: 7px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    padding: 0;
+    height: 30px;
+  }
+  .btn_swip.swiper-button-prev{
+    left: calc(100% - 70px);
+  }
+  .btn_swip::after{
+    font-size: 10px;
+    padding: 0;
+  }
+  .swiper-pagination {
+    position: relative;
+    margin-top: 30px;
+  }
+  ::ng-deep .swiper-pagination-bullet {
+    background-color: #ddd;
+    opacity: 1;
+  }
+  ::ng-deep .swiper-pagination-bullet-active {
+    background-color: var(--yellow);
+    opacity: 1;
+    width: 20px;
+    height: 7px;
+    border-radius: 10px;
+  }
+@media(max-width:991px){
+    .card-title{
+        font-size: 15px;
+    }
+}
+@media(max-width:768px){
+
+    .title_l{
+        margin-top: 100px;
+    }
+}
+@media(max-width:578px){
+    .title_l{
+        margin: 70px auto 0;
+    }
+    .main{
+        padding-bottom: 100px;
+    }
+    .nav-tabs{
+        gap: 10px;
+    }
+    .nav-tabs .nav-link{
+        font-size: 12px;
+        padding: 7px;
+    }
+}

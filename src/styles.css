@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --dark-blue: #04004B;
+    --blue:#04004B;
+    --grad:linear-gradient(to right , #04004B , #0d0697) ;
+    --yellow: #E4A300 ;
+}
+body {
+    overflow-x: hidden; /* يمنع التمرير الأفقي */
+  }
+
+*{
+    font-family: "Roboto", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تخصيص السكرول بار للمتصفحات التي تدعم ::-webkit-scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* عرض السكرول */
+}
+
+/* تخصيص المسار الخلفي للسكرول */
+::-webkit-scrollbar-track {
+    background: #04014d94; /* لون الخلفية */
+    /* border-radius: 10px;  */
+}
+
+/* تخصيص الشريط المتحرك نفسه */
+::-webkit-scrollbar-thumb {
+    background: var(--yellow); /* لون السكرول */
+    border-radius: 10px; /* جعل السكرول ناعم */
+}
+
+
+.my_btn{
+    color: #fff;
+    outline: 1px dashed #fff;
+    outline-offset: 2px;
+    border: 1px solid var(--dark-blue);
+    border-radius: 20px;
+    background: transparent;
+    padding: 5px 20px !important;
+    transition: 0.3s;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-align: center;
+}
+.my_btn:hover{
+    outline-color: var(--yellow);
+    background: var(--yellow);
+    color: var(--dark-blue);
+}
+
+.title{
+    color: var(--dark-blue);
+    font-size: 80px;
+    position: relative;
+    font-weight: bold;
+    width: fit-content;
+}
+.title::before{
+    content: attr(data-text);
+    color: #04004b59;
+    position: absolute;
+    left: -50px;
+    top: -80%;
+}
+@media(max-width:768px){
+    .title{
+        font-size: 40px;
+    }
+}
+.title_l{
+    color: #fff;
+    font-size: 80px;
+    position: relative;
+    font-weight: bold;
+    width: fit-content;
+}
+.title_l::before{
+    content: attr(data-text);
+    color: #ffffff79;
+    position: absolute;
+    left: 50px;
+    top: -80%;
+    width: 100%;
+}
+.shape{
+    transform-origin: top center;
+    animation: shape 8s infinite linear;
+}
+
+@keyframes shape {
+    0% , 100% {
+        transform:rotate(3deg);
+    }
+    25%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(-3deg);
+
+    }
+}
+@media(max-width:768px){
+    .title_l{
+        font-size: 40px;
+        margin: auto;
+    }
+}
+@media(max-width:578px){
+    .title_l{
+        font-size: 30px;
+        margin: auto;
+    }
+}
+
+
+.circle_shape{
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 800px;
+    animation: circle_shape 8s infinite linear;
+    transform-origin: top center;
+}
+@keyframes circle_shape {
+    0% ,100%{
+        transform: rotate(-3deg);
+    }
+    25%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(3deg);
+    }
+}
+@media(max-width:991px){
+    .circle_shape{
+        width: 600px;
+    }
+}
+@media(max-width:768px){
+    .circle_shape{
+        width: 400px;
+    }
+
+}
+@media(max-width:578px){
+    .circle_shape{
+        width: 300px;
+    }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

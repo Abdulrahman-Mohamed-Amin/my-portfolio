@@ -1,0 +1,34 @@
+.main{
+    padding: 200px 0 250px 0;
+    background: var(--grad);
+}
+.title_l{
+    margin-top: 300px;
+    margin-left: 20px;
+}
+.prog{
+    background: #000;
+    
+}
+.skill{
+    font-size: 14px;
+    font-weight: bold;
+}
+.box img{
+    width: 60px;
+}
+
+@media(max-width:768px){
+
+    .title_l{
+        margin-top: 100px;
+    }
+}
+@media(max-width:578px){
+    .title_l{
+        margin-top: 70px;
+    }
+    .main{
+        padding-bottom: 100px;
+    }
+}

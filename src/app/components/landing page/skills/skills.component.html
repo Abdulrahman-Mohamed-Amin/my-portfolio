@@ -1,0 +1,17 @@
+<div class="main position-relative">
+    <img src="assets/shapes/wave (2).svg" class="position-absolute top-0">
+    <img src="assets/shapes/wave (1).svg" class="position-absolute bottom-0">
+    <img src="assets/shapes/svgviewer-output.svg" class="position-absolute circle_shape">
+    <div class="container">
+        <h1 class="title_l fw-bold" data-text="Tech Stack" data-aos="fade-right">Tech Stack</h1>
+
+        <div class="row mt-5 gy-4 ">
+            @for(skill of skills ; track $index){
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6" [attr.data-aos]="skill.fade">
+                    <div class="" #progressContainer >
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

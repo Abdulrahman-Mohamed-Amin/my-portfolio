@@ -1,0 +1,35 @@
+.main{
+    background: var(--blue);
+
+    /* padding: 100px 0; */
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main img{
+    position: absolute;
+    top: -10px;
+}
+a{
+    color: #fff;
+    transition: 0.3s;
+    outline: 1px dashed transparent;
+    padding: 4px 15px;
+    border-radius: 10px;
+}
+a:hover{
+    outline-color: var(--yellow);
+    color: var(--yellow);
+}
+.icons{
+    position: absolute;
+    bottom: 20px;
+}
+@media(max-width:768px){
+    .main{
+        height: 250PX;
+    }
+}

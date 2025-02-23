@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+        <img src="assets/shapes/svgviewer-output4.svg" alt="" class="shape1" data-aos="fade-up">
+        <h1 class="title" data-text="Contact with me" data-aos="fade-left">Contact with me</h1>
+    </div>
+
+    
+    <div class="row mt-5">
+        <div class="col-12 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1000">
+            <div class="box shadow">
+                <div class="circle d-flex align-items-center justify-content-center" >
+                    <form class="form  w-100" [formGroup]="form">
+                        <input type="text" placeholder="Name*" class="input" formControlName="name">
+
+                        @if(form.get('name')?.getError('required') && form.get('name')?.touched){
+                            <div class="alert alert-danger rounded-4 text-center p-0"> Name is required</div>
+                        }
+                        @if(form.get('name')?.getError('minlength') && form.get('name')?.touched){
+                            <div class="alert alert-danger rounded-4 text-center p-0"> minimum 3 Chars</div>
+                        }
+                        <input type="email" placeholder="Email*" class="input" formControlName="email">
+                        
+                        @if(form.get('email')?.getError('required') && form.get('email')?.touched){
+                            <div class="alert alert-danger rounded-4 text-center p-0"> Email is required</div>
+                        }
+                        @if(form.get('email')?.getError('email') && form.get('email')?.touched){
+                            <div class="alert alert-danger rounded-4 text-center p-0">This email is invalid</div>
+                        }
+                        <textarea name="" id="" formControlName="message" class="form-control mb-3" placeholder="Message *"></textarea>
+
+                        @if(form.get('message')?.getError('required') && form.get('message')?.touched){
+                            <div class="alert alert-danger rounded-4 text-center p-0"> Message is required</div>
+                        }
+                        <button class="my_btn" (click)="send()">send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

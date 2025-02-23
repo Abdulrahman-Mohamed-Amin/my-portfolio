@@ -1,0 +1,155 @@
+.main{
+    background: var(--blue);
+    height: 120vh;
+    padding-top: 80px;
+    margin-top: 60px;
+}
+.my_btn{
+    border-color: var(--blue);
+}
+.box h3{
+    color: #fff;
+}
+.box h1{
+    color: var(--yellow);
+    font-size: 60px;
+}
+button{
+    background: transparent;
+    border: none;
+}
+.icons a{
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s;
+    padding: 2px 15px;
+    border: solid 1px var(--blue);
+}
+.icons a:hover{
+    color: var(--yellow);
+    border: 1px dashed var(--yellow);
+    border-radius: 15px;
+}
+button a{
+    text-decoration: none;
+    font-size: 18px;
+}
+.img_box{
+    width: 350px;
+    height: 350px;
+    background: var(--yellow);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--blue);
+    outline: 5px dashed var(--yellow);
+    outline-offset: 5px;
+    transition: 0.5s;
+}
+.img_box:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+.abdo{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    animation: abdo 10s infinite alternate linear;
+}
+.shape{
+    width: 400px;
+}
+.shape1{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    animation: shape1 8s infinite alternate ease-in-out;
+}
+.shape2{
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    animation: shape2 8s infinite alternate ease-in-out;
+}
+.shape3{
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    rotate: -10deg;
+    animation: shape3 8s infinite alternate ease-in-out;
+}
+@media(max-width:991px){
+    .main{
+        padding-top: 20px;
+    }
+    .img_box{
+        width: 250px;
+        height: 250px;
+    }
+    .abdo{
+        width: 350px;
+    }
+}
+@media(max-width:578px){
+    .box .name{
+        font-size: 30px;
+    }
+    .box h3{
+        font-size: 20px;
+    }
+    .main{
+        height: 100vh;
+    }
+    .shape{
+        width: 200px;
+    }
+    button a{
+        text-decoration: none;
+        font-size: 12px;
+    }
+}
+
+@keyframes shape1{
+    0% ,100%{
+        transform: translateX(40px);
+    }
+    25% , 50%{
+        transform: translateX(-40px);
+    }
+}
+@keyframes shape2{
+    0% ,100%{
+        transform: translateX(-40px) rotate(5deg);
+    }
+    25% , 50%{
+        transform: translateX(30px) rotate(0deg);
+    }
+}
+@keyframes shape3{
+    0% ,100%{
+        transform: translateX(-10px) rotate(10deg);
+    }
+    25% , 50%{
+        transform: translateX(10px) rotate(-10deg);
+    }
+}
+
+@keyframes abdo {
+    0%{
+        bottom: 0;
+    }
+    30%{
+        bottom: -40px;
+
+    }
+    60% {
+        bottom: 0px;
+    }
+    85%{
+        bottom: -40px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
