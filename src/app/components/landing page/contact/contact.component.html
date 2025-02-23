@@ -31,10 +31,12 @@
                         @if(form.get('message')?.getError('required') && form.get('message')?.touched){
                             <div class="alert alert-danger rounded-4 text-center p-0"> Message is required</div>
                         }
-                        <button class="my_btn" (click)="send()">send</button>
+                        <button class="my_btn" (click)="send()" [disabled]="form.invalid">send</button>
+
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="message" [ngClass]="{'show': show}">Message Send successfuly</div>
