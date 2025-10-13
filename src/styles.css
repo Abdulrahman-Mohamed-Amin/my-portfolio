@@ -7,7 +7,7 @@
     --grad:linear-gradient(to right , #04004B , #0d0697) ;
     --yellow: #E4A300 ;
 }
-body {
+body , html{
     overflow-x: hidden; /* يمنع التمرير الأفقي */
   }
 
