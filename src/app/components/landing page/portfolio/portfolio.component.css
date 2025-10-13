@@ -184,3 +184,9 @@ button a:hover{
         padding: 7px;
     }
 }
+
+.fix{
+      overflow-x: clip;
+  max-width: 100%;
+  transform: none !important;
+}
