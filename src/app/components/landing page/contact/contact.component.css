@@ -14,11 +14,7 @@
     position: relative;
     overflow: hidden;
 }
-.fix{
-      overflow-x: clip;
-  max-width: 100%;
-  transform: none !important;
-}
+
 .circle{
     position: absolute;
     left: 50%; top: 50%;
