@@ -44,9 +44,9 @@
     height: 150px;
 }
 .card-text{
-    font-size: 13px;
     height: 60px;
     margin: 0;
+    font-size: 9px;
 }
 .java .card-text{
 height: 90px;
@@ -159,9 +159,7 @@ button a:hover{
     border-radius: 10px;
   }
 @media(max-width:991px){
-    .card-title{
-        font-size: 15px;
-    }
+
 }
 @media(max-width:768px){
 
